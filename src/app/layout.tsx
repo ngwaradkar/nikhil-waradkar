@@ -28,6 +28,9 @@ export default function RootLayout({
       <body className={`${inter.variable} ${outfit.variable} antialiased bg-industrial-base text-white`}>
         <Cursor />
         {children}
+        <div className="text-slate-500 text-sm font-mono mb-4 uppercase tracking-widest">
+          Nikhil G. Waradkar &copy; {new Date().getFullYear()} / PMC & AI Transformation
+        </div>
       </body>
     </html>
   );

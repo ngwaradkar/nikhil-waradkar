@@ -1,13 +1,15 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
   },
-  // Ensure the basePath matches your repository name for github.io deployment
-  basePath: '/nikhil-waradkar',
-  assetPrefix: '/nikhil-waradkar',
+  // Only apply basePath and assetPrefix in production for GitHub Pages
+  basePath: isProd ? '/nikhil-waradkar' : '',
+  assetPrefix: isProd ? '/nikhil-waradkar' : '',
 };
 
 export default nextConfig;

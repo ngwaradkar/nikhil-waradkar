@@ -56,7 +56,7 @@ export default function Navbar({ isRecruiterMode, onToggle }: NavbarProps) {
             <nav className="fixed top-0 left-0 right-0 z-50 py-4 bg-white/80 backdrop-blur-md border-b border-slate-200">
                 <div className="container mx-auto px-6 h-12 flex items-center justify-between">
                     <div className="text-xl font-black text-slate-900 tracking-tight">
-                        NIKHIL<span className="text-indigo-600">.W</span>
+                        NIKHIL <span className="text-indigo-600">WARADKAR</span>
                     </div>
                     <button
                         onClick={onToggle}
@@ -77,7 +77,7 @@ export default function Navbar({ isRecruiterMode, onToggle }: NavbarProps) {
                     animate={{ opacity: 1, x: 0 }}
                     className="text-2xl font-black font-display tracking-tight text-white"
                 >
-                    NIKHIL<span className="text-neon-blue">.W</span>
+                    NIKHIL <span className="text-neon-blue">WARADKAR</span>
                 </motion.div>
 
                 {/* Desktop Nav */}
