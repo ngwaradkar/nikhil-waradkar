@@ -25,7 +25,7 @@ export default function Hero() {
                         Assistant Manager - PPC
                     </motion.div>
 
-                    <h1 className="text-6xl md:text-8xl font-black font-display mb-6 leading-[0.9]">
+                    <h1 className="text-4xl sm:text-5xl md:text-8xl font-black font-display mb-6 leading-[0.9]">
                         Driving Smart <br />
                         <span className="text-gradient">Manufacturing</span> <br />
                         with AI & Data
@@ -40,9 +40,13 @@ export default function Hero() {
                         <button className="px-8 py-4 bg-neon-blue text-industrial-base font-bold rounded-xl hover:shadow-[0_0_20px_rgba(0,242,255,0.6)] transition-all transform hover:-translate-y-1">
                             View Projects
                         </button>
-                        <button className="px-8 py-4 border border-white/10 glass rounded-xl hover:bg-white/5 transition-all text-white font-bold transform hover:-translate-y-1">
+                        <a
+                            href="Resume.pdf"
+                            download="Nikhil_Waradkar_Resume.pdf"
+                            className="px-8 py-4 border border-white/10 glass rounded-xl hover:bg-white/5 transition-all text-white font-bold transform hover:-translate-y-1 flex items-center justify-center"
+                        >
                             Download Resume
-                        </button>
+                        </a>
                         <a
                             href="https://www.linkedin.com/in/nikhil-waradkar-268705153/"
                             target="_blank"

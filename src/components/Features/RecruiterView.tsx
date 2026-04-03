@@ -17,9 +17,13 @@ export default function RecruiterView() {
                         <p className="text-xl font-bold text-indigo-600 uppercase tracking-widest">Assistant Manager - Production Planning & Control</p>
                         <div className="mt-4 text-slate-500 font-medium">Pune, India | ngwaradkar@gmail.com | +91-8668634502</div>
                     </div>
-                    <button className="px-6 py-3 bg-slate-900 text-white font-bold rounded-lg flex items-center gap-3 hover:bg-indigo-600 transition-colors">
+                    <a
+                        href="Resume.pdf"
+                        download="Nikhil_Waradkar_Resume.pdf"
+                        className="px-6 py-3 bg-slate-900 text-white font-bold rounded-lg flex items-center gap-3 hover:bg-indigo-600 transition-colors"
+                    >
                         <Download size={20} /> Export Resume
-                    </button>
+                    </a>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-12 border-y border-slate-200 py-12">
