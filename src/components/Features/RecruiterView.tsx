@@ -18,7 +18,7 @@ export default function RecruiterView() {
                         <div className="mt-4 text-slate-500 font-medium">Pune, India | ngwaradkar@gmail.com | +91-8668634502</div>
                     </div>
                     <a
-                        href="Resume.pdf"
+                        href={process.env.NODE_ENV === 'production' ? '/nikhil-waradkar/Nikhil_Waradkar_Resume.pdf' : '/Nikhil_Waradkar_Resume.pdf'}
                         download="Nikhil_Waradkar_Resume.pdf"
                         className="px-6 py-3 bg-slate-900 text-white font-bold rounded-lg flex items-center gap-3 hover:bg-indigo-600 transition-colors"
                     >

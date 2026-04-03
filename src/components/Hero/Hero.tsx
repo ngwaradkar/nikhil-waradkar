@@ -41,7 +41,7 @@ export default function Hero() {
                             View Projects
                         </button>
                         <a
-                            href="Resume.pdf"
+                            href={process.env.NODE_ENV === 'production' ? '/nikhil-waradkar/Nikhil_Waradkar_Resume.pdf' : '/Nikhil_Waradkar_Resume.pdf'}
                             download="Nikhil_Waradkar_Resume.pdf"
                             className="px-8 py-4 border border-white/10 glass rounded-xl hover:bg-white/5 transition-all text-white font-bold transform hover:-translate-y-1 flex items-center justify-center"
                         >
